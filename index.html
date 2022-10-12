@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title> VIGA </title>
+      <link rel="stylesheet" href="./style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+
+    </head>
+    <body>
+
+      <main>
+          <article id="fase2">
+            <section class="cabecera">
+              <h2>CUANTO MIDE LA VIGA</h2>
+            </section>
+      
+            <section id="mide-viga">     
+              <input type="number" id="texto_lineas"/>
+              <button id="aDarle">A darle</button>
+            </section>
+
+            <section class="canva">
+              <canvas width="700" height="300" id= "dibujito"></canvas>
+            </section>
+            <!-- <section><button type="button"> <img src="https://bit.ly/3BF9FD7" height ="80" width="100" /></button> --> 
+          
+
+          
+            <article class="datos-todos">
+                
+            <section class="dato-fuerza">
+              <h2>Magnitud</h2>
+              <input type="number" id = "fuerza" />
+              <h2>Distancia</h2>
+              <input type="number" id = "distancia" />
+              <br/>
+              <button id="guardar">Guardar</button>
+            </section>
+
+            <section class="dato-fuerza">
+                <table class="tabla-concentrada">
+                  <H2>FUERZA DISTRIBUIDA</H2>
+                <tr>
+                  <th> <h2>Magnitud inicial</h2> </th>
+                    <th> <h2>Distancia Inicial</h2> </th>
+                </tr>
+
+                <tr>
+                    <th> <input type="number" id = "fuerzai" /> </th>
+                    <th> <input type="number" id = "distanciai" /> </th>
+                  </tr>
+                  <tr> 
+                    <th> <h2>Magnitud final</h2> </th>
+                    <th> <h2>Distancia final</h2></th>
+                  </tr>
+                      <tr>
+                            <th> <input type="number" id = "fuerzaf" /> </th>
+                            <th> <input type="number" id = "distanciaf" /> </th>
+                      </tr> 
+                </table>
+                    <button id="guardarConcentrada">Guardar</button>
+              </section>
+            </article>
+
+            <section class="calculo-boton"> 
+              <button id="calcular"> calcular </button>
+              <p id="verificarDatos">
+            </section>
+          </article>
+
+       <section class="calculo-boton"> 
+         <button id="boton-reiniciar"> REINICIAR </button>
+       </section>
+       <section>
+        <p id="resultados">
+       </section>
+       
+       <section>
+        <canvas id="myChart" width="400" height="300"></canvas>
+       </section>
+
+       <section>
+        <p id="graficas"></p>
+       </section>
+
+     
+
+      </main>            
+                      
+       <script src="./js/vigam.js"> </script>
+       <script src = "./js/viga.js"> </script>
+       <script src = "./js/variables.js"> </script>
+       <script src = "./js/fuezaConcentrada.js"> </script>
+       <script src="./js/graficas.js"></script>
+    
+  </body>
+</html>
